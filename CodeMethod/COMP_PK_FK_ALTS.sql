@@ -1,0 +1,2 @@
+--alter table "AZ16AAN"."SHOWINGS" add constraint shw_cinno_scrno_FK foreign key("CINEMA_NO","SCREEN_NO") references "SCREEN"("CINEMA_NO","SCREEN_NO");
+alter table "AZ16AAN"."PERFORMANCE" add constraint per_cinno_scrno_filmno_FK foreign key("CINEMA_NO","SCREEN_NO","FILM_NO") references "SHOWINGS"("CINEMA_NO","SCREEN_NO","FILM_NO");
